@@ -343,26 +343,49 @@ ul {
 }
 
 .centered-content {
-  width: 50%;
-  margin: 10% auto 14% 33%;
+  width: 80%;
+  margin: 140px auto 0 auto;
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
 }
 
-.centered-content > .logo {
-  font-size: 9.5rem;
-  font-family: "Montserrat-med";
-  color: #fff;
+.centered-content .logo {
+  width: 45%;
+  min-width: 500px;
+  height: 100%;
+  position: relative;
+  
+  
+}
+
+.centered-content > .logo img {
+  translate: 63% 0; 
+  transform: scale(1.5);
   animation: logo-slide 1s ease-in-out normal;
-  animation-delay: 4s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;  
+  height: 100%;
+  width: 80%;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+}
+
+.centered-content .vertical-line {
+  min-width: 5px;
+  height: 0px;
+  background: #fff;
+  position: relative;
+  animation: vertical-line-fade-in 1.5s ease-in-out normal;
+  animation-delay: 2.7s;
   animation-fill-mode: forwards;
 }
 
 .centered-content .main-text p {
-  translate: -100px 0;
   animation: fade-and-slide-in 2s ease-in-out normal;
-  animation-delay: 5s;
+  animation-delay: 2.3s;
   animation-fill-mode: forwards;
   opacity: 0;
   font-family: "ellen";
@@ -370,20 +393,27 @@ ul {
   text-transform: uppercase;
   font-size: 5.5rem;
   line-height: 10px;
+  padding-left: 90px;
+  height: 100%;
+}
+
+.centered-content .main-text {
+  width: 45%;
+  height: 100%
 }
 
 section {
-  height: 40vh;
+  height: 100vh;
 }
 
 @keyframes logo-slide {
   0%{
-    translate: 0;
+    
   }
 
   100% {
-    translate: -150px 0;
-    font-size: 6.5rem;
+    translate: 0 0;
+    transform: scale(1);
   }
 }
 
@@ -393,6 +423,18 @@ section {
   }
 
   100% {
+    opacity: 1;
+  }
+}
+
+@keyframes vertical-line-fade-in {
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+
+  100% {
+    height: 360px;
     opacity: 1;
   }
 }
