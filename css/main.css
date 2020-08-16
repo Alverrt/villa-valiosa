@@ -295,6 +295,26 @@ textarea {
   src: url(/fonts/allura/Allura-Regular.ttf);
 }
 
+@font-face {
+  font-family: spectral-extrabold;
+  src: url(/fonts/spectral/Spectral-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: spectral-bold;
+  src: url(/fonts/spectral/Spectral-Bold.ttf);
+}
+
+@font-face {
+  font-family: spectral-med;
+  src: url(/fonts/spectral/Spectral-Medium.ttf);
+}
+
+@font-face {
+  font-family: spectral-reg;
+  src: url(/fonts/spectral/Spectral-Regular.ttf);
+}
+
 body, html {
   height: 100%;
 }
@@ -402,10 +422,6 @@ ul {
   height: 100%
 }
 
-section {
-  height: 100vh;
-}
-
 @keyframes logo-slide {
   0%{
     
@@ -437,6 +453,57 @@ section {
     height: 360px;
     opacity: 1;
   }
+}
+
+.z-design-content {
+  background: #F9FAFA;
+  padding: 100px 0;
+}
+
+.z-container {
+  margin: 0 auto;
+  max-width: 45%;
+}
+
+.img-box {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.single-img {
+  max-width: 360px;
+  max-height: 100%;
+}
+
+.single-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.some-text {
+  flex: 0 1 400px;
+}
+
+.some-text h1 {
+  font-size: 4.5rem;
+  font-family: "spectral-bold";
+  margin: 60px auto 0 auto;
+  text-align: center;
+  opacity: .9;
+}
+
+.some-text p {
+  font-family: "Montserrat-reg";
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.middle-one {
+  order: 2;
 }
 
 
