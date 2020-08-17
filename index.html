@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <link rel="stylesheet" href="js/vendor/tiny-slider/tiny-slider.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -48,35 +51,45 @@
       </div>
     </div>
   </header>
-  
+
   <section class="z-design-content">
     <div class="z-container">
       <div class="img-box">
         <div class="single-img"><img src="/img/pic_1.jpg" alt=""></div>
         <div class="some-text">
           <h1>Modern</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam saepe obcaecati pariatur dolore odio ipsa.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam saepe obcaecati pariatur dolore odio ipsa.
+          </p>
         </div>
       </div>
       <div class="img-box">
         <div class="single-img middle-one"><img src="/img/pic_2.jpg" alt=""></div>
         <div class="some-text">
           <h1>Dogal</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam saepe obcaecati pariatur dolore odio ipsa.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam saepe obcaecati pariatur dolore odio ipsa.
+          </p>
         </div>
       </div>
       <div class="img-box">
         <div class="single-img"><img src="/img/pic_3.jpg" alt=""></div>
         <div class="some-text">
           <h1>Huzur</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam saepe obcaecati pariatur dolore odio ipsa.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam saepe obcaecati pariatur dolore odio ipsa.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="image-slider">
-    
+    <div class="my-slider">
+
+      <div class="slide-item"><img src="/img/pic_1.jpg" alt=""></div>
+      <div class="slide-item"><img src="/img/pic_2.jpg" alt=""></div>
+      <div class="slide-item"><img src="/img/pic_3.jpg" alt=""></div>
+      <div class="slide-item"><img src="/img/ralph-ravi-kayden-mdwOo5PeXpE-unsplash.jpg" alt=""></div>
+
+    </div>
   </section>
 
 
@@ -84,6 +97,19 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script>
+    var slider = tns({
+      container: '.my-slider',
+      mode: 'gallery',
+      items: 1,
+      gutter: '10',
+      slideBy: 'page',
+      navPosition: 'bottom',
+      autoplay: false
+    });
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
