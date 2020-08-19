@@ -321,7 +321,7 @@ body, html {
 
 
 header {
-  height: 100%;
+  min-height: 100vh;
   background: url(/img/bg.jpg);
   
   background-size: cover;
@@ -329,6 +329,7 @@ header {
 
 nav {
   height: 10%;
+  padding: 20px 0;
 }
 
 ul {
@@ -356,7 +357,7 @@ ul {
 }
 
 .double-bg {
-  height: 100%;
+  min-height: 100vh;
   background: black;
   background-size: cover;
   opacity: 0.7;
@@ -373,7 +374,7 @@ ul {
 
 .centered-content .logo {
   width: 45%;
-  min-width: 500px;
+  min-width: 450px;
   height: 100%;
   position: relative;
   
@@ -486,6 +487,7 @@ ul {
 
 .some-text {
   flex: 0 1 400px;
+  background-color: rgba(0, 0, 0, 0.01);
 }
 
 .some-text h1 {
@@ -513,6 +515,14 @@ ul {
   height: auto;
 }
 
+.image-slider h1 {
+  font-size: 4.5rem;
+  font-family: "spectral-med";
+  margin: 60px auto 0 auto;
+  text-align: center;
+  opacity: .9;
+}
+
 .my-slider {
   height: 60vh;
   width: 50%;
@@ -525,6 +535,7 @@ ul {
 
 .slide-item {
   width: 100%;
+  padding: 0 !important;
 }
 
 .my-slider img {
@@ -533,18 +544,175 @@ ul {
 }
 
 .tns-controls {
-  width: 50%;
+  width: 48%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   position: relative;
   z-index: 10;
-  top: 270px;
+  top: 300px;
 }
 
 .tns-controls button {
   border: none;
   background: transparent;
+  font-size: 13px;
+  border: 2px solid #fff;
+  border-radius: 80px;
+  padding: 10px 12px;
+  color: #fff;
 }
+
+.tns-nav {
+  display: none;
+}
+
+.map-and-contact {
+  height: auto;
+  width: 100%;
+  margin: 120px 0;
+  padding: 40px 0;
+  background-color: #F9FAFA;
+}
+
+.map-and-contact-container {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.map {
+  flex-basis: 40%;
+}
+
+.map h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "spectral-med";
+  opacity: .9;
+}
+
+.map img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.contact-me {
+  align-self: center;
+  flex-basis: 40%;
+}
+
+.contact-me h1 {
+  font-size: 2.5rem;
+  font-family: "spectral-med";
+  opacity: .9;
+}
+
+.contact-me h2 {
+  font-size: 1.5rem;
+  font-family: "spectral-med";
+  opacity: 1;
+}
+
+.contact-me p {
+  font-size: 1.2rem;
+  font-family: "spectral-reg";
+  opacity: 1;
+}
+
+footer {
+  width: 100%;
+  background: rgba(40, 44, 47, .9);
+  padding: 50px 0;
+}
+
+footer > * p {
+  color: #fff;
+}
+
+footer > * h2 {
+  color: #fff;
+}
+
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info {
+  flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-us {
+  flex: 0 1 43%;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  max-width: 30%;
+}
+
+.social-media i {
+  font-size: 1.5rem;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  padding: 12px;
+}
+
+.social-media .facebook i {
+  padding: 12px 16px;
+}
+
+.contact-info i {
+  font-size: 1.8rem;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  padding: 12px;
+}
+
+.adress i {
+  padding: 12px 16px;
+}
+
+.contact-info .adress, .e-mail, .phone-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  min-height: 80px;
+}
+
+.contact-info .adress {
+  flex: 1 1 10%;
+}
+
+.contact-info .adress p {
+  flex: 1 1 50%;
+  margin-left: 20px;
+}
+
+.e-mail p {
+  flex: 2 1 auto;
+  margin-left: 20px;
+}
+
+.phone-number p {
+  flex: 2 1 auto;
+  margin-left: 20px;
+}
+
+
 
 
