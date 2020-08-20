@@ -374,7 +374,7 @@ ul {
 
 .centered-content .logo {
   width: 45%;
-  min-width: 450px;
+  min-width: 420px;
   height: 100%;
   position: relative;
   
@@ -463,11 +463,11 @@ ul {
 
 .z-container {
   margin: 0 auto;
-  max-width: 45%;
+  max-width: 48%;
 }
 
 .img-box {
-  height: 400px;
+  height: auto;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -579,6 +579,7 @@ ul {
   width: 50%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -643,6 +644,7 @@ footer > * h2 {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contact-info {
@@ -650,6 +652,7 @@ footer > * h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  order: 2;
 }
 
 .about-us {
@@ -714,5 +717,269 @@ footer > * h2 {
 }
 
 
+/*______MEDIA_QUERIES_______*/
 
+/* 
+
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+*/
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px){
+  .z-design-content .z-container {
+    max-width: 80%;
+  }
+
+  .z-design-content .z-container .img-box .single-img {
+    max-width: 420px;
+  }
+
+  .z-design-content .z-container .some-text {
+    flex-grow: 1;
+    margin-left: 85px;
+  }
+
+  #middle-text {
+    margin-left: 0;
+    margin-right: 85px;
+  }
+} 
+
+@media only screen and (max-width: 1200px) {
+  header .double-bg .centered-content .main-text .brand-name {
+    font-size: 4rem;
+  }
+
+  .z-design-content .z-container .img-box {
+    justify-content: center;
+  }
+
+  .middle-one {
+    order: 0;
+  }
+
+  .tns-controls {
+    top: 250px;
+  }
+
+  .map-and-contact-container {
+    width: 90%;
+  }
+
+  .map {
+    min-width: 400px;
+  }
+
+  .contact-me {
+    min-width: 400px;
+    margin-left: 50px;
+  }
+
+  .map > h1:nth-child(1) {
+    font-size: 2rem;
+  }
+
+  .contact-me > h1:nth-child(1) {
+    font-size: 2rem;
+  }
+
+  .contact-me > h2:nth-child(2) {
+    font-size: 1.3rem;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 965px) {
+  .vertical-line {
+    display: none;
+  }
+
+  header .double-bg .centered-content .main-text .brand-name {
+    padding-left: 30px;
+  }
+
+  .centered-content > .logo img {
+    translate: 0 0; 
+    transform: scale(1.3);
+    animation: none;
+  }
+
+  .centered-content {
+    width: 100%;
+  }
+
+  header .double-bg .centered-content .main-text p {
+    animation: none;
+    opacity: 1;
+  }
+
+  .some-text h1 {
+    font-size: 3rem;
+  }
+
+  .some-text p {
+    font-size: 1.1rem;
+  }
+
+  #tns1 {
+    width: 80%;
+  }
+
+  .tns-controls {
+    width: 75%;
+    top: 250px;
+  }
+
+  .image-slider .slide-header {
+    font-size: 3rem;
+  }
+
+  .z-container {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  div.img-box:nth-child(1) > div:nth-child(1) {
+    width: 500px;
+  }
+
+  .map-and-contact-container {
+    justify-content: center;
+  }
+
+  .contact-me {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  p.phone-number {
+    display: block;
+  }
+
+  .contact-info {
+    font-size: 0.8rem;
+  }
+
+  .about-us p {
+    font-size: 0.9rem;
+  }
+
+}
+
+@media only screen and (max-width: 763px) {
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-item > ul:nth-child(1) li {
+    margin: 0 15px;
+  }
+
+  header .double-bg .centered-content .main-text .brand-name {
+    text-align: center;
+    padding: 0;
+  }
+
+  .logo > img:nth-child(1) {
+    width: 70%;
+  }
+
+  header .double-bg .centered-content .main-text {
+    margin: 40px 0;
+    width: 100%;
+  }
+
+  header .double-bg .centered-content {
+    margin-top: 60px;
+  }
+
+  .footer-container {
+    justify-content: center;
+  }
+
+  .social-media {
+    max-width: 100%;
+    justify-content: space-around;
+  }
+
+  .about-us {
+    min-width: 400px;
+    text-align: center;
+    order: 1;
+  }
+
+  .contact-info i {
+    font-size: 1.2rem;
+  }
+
+  .contact-info {
+    min-width: 80%;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .z-container {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  div.img-box:nth-child(1) > div:nth-child(1) {
+    width: 500px;
+  }
+
+  #tns1 {
+    width: 100%;
+  }
+
+  .tns-controls {
+    width: 95%;
+    top: 250px;
+  }
+
+  .map-and-contact-container {
+    width: 100%;
+  }
+
+  .map {
+    min-width: 99%;
+  }
+
+  .contact-me {
+    min-width: 100%;
+  }
+
+  .about-us {
+    min-width: 100%;
+  }
+
+  .contact-info {
+    min-width: 100%;
+    margin-top: 50px;
+  }
+}
+
+/*
+
+translate: 63% 0; 
+  transform: scale(1.5);
+  animation: logo-slide 1s ease-in-out normal;
+
+*/
 
