@@ -322,7 +322,7 @@ body, html {
 
 header {
   min-height: 100vh;
-  background: url(/img/bg.jpg);
+  background: url(/img/bgdenemelik.jpg);
   
   background-size: cover;
 }
@@ -340,6 +340,15 @@ ul {
   padding: 0;
 }
 
+.nav-item ul a {
+  text-decoration: none;
+}
+
+.nav-item ul a:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #fff;
+}
 
 .nav-item {
   height: 100%;
@@ -360,7 +369,7 @@ ul {
   min-height: 100vh;
   background: black;
   background-size: cover;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .centered-content {
@@ -381,12 +390,12 @@ ul {
   
 }
 
-.centered-content > .logo img {
+.centered-content > .logo object {
   translate: 63% 0; 
   transform: scale(1.5);
   animation: logo-slide 1s ease-in-out normal;
   animation-delay: 1.5s;
-  animation-fill-mode: forwards;  
+  animation-fill-mode: forwards; 
   height: 100%;
   width: 80%;
   color: #fff;
@@ -476,7 +485,7 @@ ul {
 }
 
 .single-img {
-  max-width: 360px;
+  max-width: 440px;
   max-height: 100%;
 }
 
@@ -561,6 +570,7 @@ ul {
   border-radius: 80px;
   padding: 10px 12px;
   color: #fff;
+  outline: none;
 }
 
 .tns-nav {
@@ -623,6 +633,7 @@ ul {
   font-size: 1.2rem;
   font-family: "spectral-reg";
   opacity: 1;
+  line-height: 10px;
 }
 
 footer {
@@ -734,7 +745,7 @@ footer > * h2 {
 
 */
 
-@media only screen and (min-width: 1200px) and (max-width: 1600px){
+@media only screen and (min-width: 1200px) and (max-width: 1750px){
   .z-design-content .z-container {
     max-width: 80%;
   }
@@ -744,7 +755,7 @@ footer > * h2 {
   }
 
   .z-design-content .z-container .some-text {
-    flex-grow: 1;
+    flex-grow: 2;
     margin-left: 85px;
   }
 
@@ -796,9 +807,9 @@ footer > * h2 {
     font-size: 1.3rem;
   }
 
-  html {
+  html, body {
     overflow-x: hidden;
-  }
+  } 
 }
 
 @media only screen and (max-width: 965px) {
@@ -810,8 +821,8 @@ footer > * h2 {
     padding-left: 30px;
   }
 
-  .centered-content > .logo img {
-    translate: 0 0; 
+  .centered-content > .logo object {
+    translate: 0 0;
     transform: scale(1.3);
     animation: none;
   }
@@ -895,7 +906,7 @@ footer > * h2 {
     padding: 0;
   }
 
-  .logo > img:nth-child(1) {
+  .logo > object:nth-child(1) {
     width: 70%;
   }
 
@@ -931,6 +942,11 @@ footer > * h2 {
     min-width: 80%;
     margin-top: 50px;
   }
+
+  .my-slider {
+    height: 40vh;
+  }
+
 }
 
 @media only screen and (max-width: 470px) {
@@ -957,12 +973,20 @@ footer > * h2 {
     width: 100%;
   }
 
+  .my-slider {
+    height: 40vh;
+  }
+
   .map {
     min-width: 99%;
   }
 
   .contact-me {
     min-width: 100%;
+  }
+
+  p.adress:nth-child(4) {
+    line-height: 25px;
   }
 
   .about-us {
